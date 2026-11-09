@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px 40px;
+    color: #222222;
+    background-color: #fcfcfc;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.separator {
+    margin: 40px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.task1-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Форма */
+#user-form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.form-group input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #767676;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form-group.invalid input {
+    border: 2px solid #d32f2f;
+    background-color: #ffebee;
+}
+
+.error-msg {
+    display: none;
+    color: #d32f2f;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.form-group.invalid .error-msg {
+    display: block;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #2a52be;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #1b3b8b;
+}
+
+.result-card {
+    width: 350px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.result-card.hidden {
+    display: none;
+}
+
+.result-card h3 {
+    margin-top: 0;
+    color: #2a52be;
+    border-bottom: 2px solid #2a52be;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.result-card p {
+    margin: 10px 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Завдання 2 */
+.palette-container {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+#colorPicker {
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+}
+
+#interactive-table {
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+#interactive-table td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333333;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 16px;
+    user-select: none;
+    transition: background-color 0.15s ease;
+}

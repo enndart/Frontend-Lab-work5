@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, Регулярні вирази, Валідація, Варіант 2">
+    <meta name="description" content="Лабораторна робота №5">
+    <title>Лабораторна робота №5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Завдання 1</h2>
+    
+    <div class="task1-wrapper">
+        <form id="user-form" novalidate>
+            <div class="form-group">
+                <label for="fullName">ПІБ (букви та пробіли):</label>
+                <input type="text" id="fullName" placeholder="Прізвище Ім'я По батькові">
+                <span class="error-msg">Помилка: Введіть ПІБ українською мовою</span>
+            </div>
+
+            <div class="form-group">
+                <label for="groupCode">Група (формат: ТТ-ЧЧ):</label>
+                <input type="text" id="groupCode" placeholder="ІО-67">
+                <span class="error-msg">Помилка: формат групи має бути типу ІО-67</span>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNum">Телефон (формат: +380ЧЧЧЧЧЧЧЧЧ):</label>
+                <input type="text" id="phoneNum" placeholder="+380123456789">
+                <span class="error-msg">Помилка: введіть телефон у форматі +380123456789</span>
+            </div>
+
+            <div class="form-group">
+                <label for="idCard">ID-card (формат: ТТ №ЧЧЧЧЧЧ):</label>
+                <input type="text" id="idCard" placeholder="АА №123456">
+                <span class="error-msg">Помилка: формат має бути типу ТТ №123456</span>
+            </div>
+
+            <div class="form-group">
+                <label for="faculty">Факультет (формат: ТТТТ):</label>
+                <input type="text" id="faculty" placeholder="АБАБ">
+                <span class="error-msg">Помилка: введіть 4 літери факультету (напр. ФІОТ)</span>
+            </div>
+
+            <button type="submit">Підтвердити</button>
+        </form>
+
+        <div id="result-card" class="result-card hidden">
+            <h3>Введена інформація:</h3>
+            <div id="result-content"></div>
+        </div>
+    </div>
+
+    <hr class="separator">
+
+    <h2>Завдання 2</h2>
+    
+    <div class="palette-container">
+        <label for="colorPicker">Обрати колір:</label>
+        <input type="color" id="colorPicker" value="#2a52be">
+    </div>
+
+    <table id="interactive-table">
+
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
